@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif; /* Google font 'Cairo' for modern Arabic typography */
+}
+
+/* Body Styling */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #e50914; /* Al Ahly's red */
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar nav a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Content */
+.header-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling for Counters */
+.counter-text {
+    font-size: 24px;
+    color: #333; /* Standard text color */
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #e50914; /* Background color for counters */
+    color: white; /* Text color */
+    border-radius: 5px;
+}
+
+/* Label Text Styling */
+.label-text {
+    margin: 20px 0 10px;
+    font-size: 28px;
+    color: #e50914; /* Highlight title with red */
+    font-weight: bold;
+}
+
+/* Anniversary Text Styling */
+.anniversary-text {
+    font-size: 24px;
+    color: #007bff; /* Blue color for emphasis */
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Image Styling */
+.header-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 4px solid #e50914;
+}
+
+#playButton {
+    background-color: #e50914; 
+    color: white; 
+    border: none; 
+    border-radius: 50%;
+    padding: 15px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+#playButton:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); /
+}
+
+
+#playButton i {
+    margin: 0; 
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar nav a {
+        font-size: 18px;
+    }
+
+    .header-content {
+        padding: 10px;
+    }
+
+    .counter-text, .label-text, .anniversary-text {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px; /* Decrease title size for smaller screens */
+    }
+}
+

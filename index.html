@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlQadia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="home">
+        <div class="navbar">
+            <nav>
+                <a href="/index.html" class="logo">القاضية ممكن</a>
+            </nav>
+        </div>
+        <div class="header-content">
+            <div class="content-text">
+                <p id="fridayCounter" class="counter-text"> الجمعة: <span id="fridayCount"></span></p>
+                <p id="dayCounter" class="counter-text">عدد الأيام: <span id="dayCount"></span></p>
+                <h1 class="label-text">الذكرى السنوية القادمة بعد:</h1>
+                <p id="nextAnniversary" class="anniversary-text"></p>
+            </div>
+            <img src="./main.jpg" alt="صورة المباراة" loading="lazy"/>
+        </div>
+        <audio controls loop title="Play Background Audio">
+            <source src="./file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+    <!-- End Header -->
+
+    <button id="playButton"> 
+        <i class="fas fa-play"></i>
+    </button> <!-- Play Button -->
+
+    <script src="script.js"></script>
+</body>
+</html>
