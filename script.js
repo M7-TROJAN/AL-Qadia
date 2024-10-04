@@ -19,7 +19,7 @@ function calculateFridaysSince(matchDate) {
         current.setDate(current.getDate() + 1);
     }
     
-    return fridaysCount;
+    return fridaysCount - 1;
 }
 
 // Helper function to calculate the time until the next anniversary
